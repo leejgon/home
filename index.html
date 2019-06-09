@@ -8,12 +8,7 @@
     color:green;
     text-decoration: none;
   }
-  .saw {
-    color: blue;
-  }  
-  .active {
-      color: red;
-    }
+    
   title {
     font-size: 100px; 
     text-align: center;
@@ -40,6 +35,12 @@
       display: grid;
       grid-template-columns: 150px 1fr;
     }
+    #grid ol{
+      padding-left: 33px;
+    }
+    #grid #article{
+      padding-left: 25px;
+    }
   </style>
   
 <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -58,11 +59,11 @@
   <h1>태전한의원</h1>
 <div id="grid">
   <ol>
-   <li><a href="index.html"  class="saw">한의원 소개</a></li>
-   <li><a href="1.html"  class="saw active">의료진</a></li>
+   <li><a href="index.html">한의원 소개</a></li>
+   <li><a href="1.html">의료진</a></li>
    <li><a href="2.html">진료과목</a></li>
   </ol>
-  <div> 
+  <div id="article"> 
   <h2>한의원 소개</h2>
   안녕하세요. 여기는 <strong>태전한의원 <u>홈페이지</u></strong> 입니다.
   <img src="08.jpg" width="100%">
