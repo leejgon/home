@@ -21,34 +21,33 @@
 
   <h1><a href="index.html">태전한의원</a></h1>
       
-<input type="button" value="black" onclick="
+<input id="night_day" type="button" value="night" onclick="
 var target = document.querySelector('body');                                         
-if(target.dataset.mode === 'day'){
+if(this.value === 'night'){
  target.style.backgroundColor='black';
 target.style.color='white';
-target.dataset.mode = 'night';
 this.value='day';
                                               
 var alist=document.querySelectorAll('a');
-var i=0'
+var i=0;
 while(i<alist.length){
   alist[i].style.color='powderblue';
   i=i+1;
 }
 }else{
   target.style.backgroundColor='white';
-target.style.color='black';
-  target.dataset.mode = 'day';
+  target.style.color='black';
   this.value ='night';
                                               
 var alist=document.querySelectorAll('a');
-var i=0'
+var i=0;
 while(i<alist.length){
   alist[i].style.color='blue';
   i=i+1;
 }
 }
 "> 
+  
 <div id="grid">
   <ol>
    <li><a href="index.html">한의원 소개</a></li>
