@@ -26,11 +26,25 @@ if(target.dataset.mode === 'day'){
 target.style.color='white';
 target.dataset.mode = 'night';
 this.value='day';
+                                              
+var alist=document.querySelectorAll('a');
+var i=0'
+while(i<alist.length){
+  alist[i].style.color='powderblue';
+  i=i+1;
+}
 }else{
   target.style.backgroundColor='white';
 target.style.color='black';
   target.dataset.mode = 'day';
   this.value ='night';
+                                              
+var alist=document.querySelectorAll('a');
+var i=0'
+while(i<alist.length){
+  alist[i].style.color='blue';
+  i=i+1;
+}
 }
 ">                                              
   <h1>태전한의원</h1>
