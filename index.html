@@ -14,19 +14,14 @@
 
   gtag('config', 'UA-141695517-1');
 </script>  
-   
-</head>
-
-<body>
-
-  <h1><a href="index.html">태전한의원</a></h1>
-      
-<input id="night_day" type="button" value="night" onclick="
-var target = document.querySelector('body');                                         
-if(this.value === 'night'){
+  
+<script>
+  function nightDayHandler(self){
+  var target = document.querySelector('body');                                         
+if(self.value === 'night'){
  target.style.backgroundColor='black';
 target.style.color='white';
-this.value='day';
+self.value='day';
                                               
 var alist=document.querySelectorAll('a');
 var i=0;
@@ -37,7 +32,7 @@ while(i<alist.length){
 }else{
   target.style.backgroundColor='white';
   target.style.color='black';
-  this.value ='night';
+  self.value ='night';
                                               
 var alist=document.querySelectorAll('a');
 var i=0;
@@ -46,6 +41,16 @@ while(i<alist.length){
   i=i+1;
 }
 }
+  }
+</script>
+</head>
+
+<body>
+
+  <h1><a href="index.html">태전한의원</a></h1>
+      
+<input id="night_day" type="button" value="night" onclick="
+nightDayHandler(this);
 "> 
   
 <div id="grid">
