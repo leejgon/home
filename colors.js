@@ -9,7 +9,7 @@ var Links = {
   $('body').css('color',color);
   },
   setBackgroundColor:function(color){
-  $('body').css('BackgroundColor',color);
+  $('body').css('backgroundColor',color);
   }
   }
 
